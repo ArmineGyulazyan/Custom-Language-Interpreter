@@ -86,13 +86,10 @@ class ShowStatement(ASTNode):
 
         if var.token_type == TokenType.NUMBER or var.token_type == TokenType.STRING:
             self.gui.display_result_msg(var.val)
-            # print(var.val)
         elif var.token_type == TokenType.IDENTIFIER and var.val in self.namespace:
             self.gui.display_result_msg(self.namespace[var.val])
-            # print(self.namespace[var.val])
         else:
             self.gui.display_result_msg(f'NameERROR: {var.val} is not defined')
-            # print(f'NameERROR: {var.val} is not defined')
 
 
 class Operation(ASTNode):
@@ -223,7 +220,7 @@ class Loop(ASTNode):
                 while current_index < len(self.tokens) and self.tokens[current_index].val != '}':
                     current_token = self.tokens[current_index]
                     if current_token.val in ['if', 'elif', 'else']:
-                        current_index = Statement(self.tokens,self.namespace).parse_statement(current_index)
+                        current_index = Statement(self.tokens,self.namespace,self.gui).parse_statement(current_index)
                         return index
                     elif current_token.val == 'while':
                         current_index = self.parse_statement(current_index)

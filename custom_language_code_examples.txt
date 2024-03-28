@@ -118,8 +118,19 @@ while(a<10){
     }
 }
 show("new",a)
+-------Example 10
+dec a
+a = 10
+if (a < 111) {
+   a = 88
+   show(a)
+}
+elif (a > 20) {
+   a = 99
+   show(a)
+}
 
----------Example 10
+---------Example 11
 
 dec a
 a=15
