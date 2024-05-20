@@ -1,0 +1,72 @@
+2024-05-21 02:54:38,642 - Logger - INFO - Starting tokenization for text
+2024-05-21 02:54:38,762 - Logger - DEBUG - Processing line: dec a;
+2024-05-21 02:54:38,782 - Logger - DEBUG - Tokenized <KEYWORD>: <dec>
+2024-05-21 02:54:38,783 - Logger - DEBUG - Tokenized <IDENTIFIER>: <a>
+2024-05-21 02:54:38,783 - Logger - DEBUG - Tokenized <SEMICOLON>: <;>
+2024-05-21 02:54:38,783 - Logger - DEBUG - Processing line: a = 5;
+2024-05-21 02:54:38,784 - Logger - DEBUG - Tokenized <IDENTIFIER>: <a>
+2024-05-21 02:54:38,785 - Logger - DEBUG - Tokenized <OPERATOR>: <=>
+2024-05-21 02:54:38,785 - Logger - DEBUG - Tokenized <NUMBER>: <5>
+2024-05-21 02:54:38,786 - Logger - DEBUG - Tokenized <SEMICOLON>: <;>
+2024-05-21 02:54:38,786 - Logger - DEBUG - Processing line: dec c;
+2024-05-21 02:54:38,786 - Logger - DEBUG - Tokenized <KEYWORD>: <dec>
+2024-05-21 02:54:38,787 - Logger - DEBUG - Tokenized <IDENTIFIER>: <c>
+2024-05-21 02:54:38,788 - Logger - DEBUG - Tokenized <SEMICOLON>: <;>
+2024-05-21 02:54:38,788 - Logger - DEBUG - Processing line: c = 3*(a+23)-5*(a-3);
+2024-05-21 02:54:38,788 - Logger - DEBUG - Tokenized <IDENTIFIER>: <c>
+2024-05-21 02:54:38,789 - Logger - DEBUG - Tokenized <OPERATOR>: <=>
+2024-05-21 02:54:38,790 - Logger - DEBUG - Tokenized <NUMBER>: <3>
+2024-05-21 02:54:38,790 - Logger - DEBUG - Tokenized <OPERATOR>: <*>
+2024-05-21 02:54:38,791 - Logger - DEBUG - Tokenized <PARENTHESIS>: <(>
+2024-05-21 02:54:38,792 - Logger - DEBUG - Tokenized <IDENTIFIER>: <a>
+2024-05-21 02:54:38,792 - Logger - DEBUG - Tokenized <OPERATOR>: <+>
+2024-05-21 02:54:38,793 - Logger - DEBUG - Tokenized <NUMBER>: <23>
+2024-05-21 02:54:38,793 - Logger - DEBUG - Tokenized <PARENTHESIS>: <)>
+2024-05-21 02:54:38,794 - Logger - DEBUG - Tokenized <OPERATOR>: <->
+2024-05-21 02:54:38,795 - Logger - DEBUG - Tokenized <NUMBER>: <5>
+2024-05-21 02:54:38,795 - Logger - DEBUG - Tokenized <OPERATOR>: <*>
+2024-05-21 02:54:38,795 - Logger - DEBUG - Tokenized <PARENTHESIS>: <(>
+2024-05-21 02:54:38,796 - Logger - DEBUG - Tokenized <IDENTIFIER>: <a>
+2024-05-21 02:54:38,797 - Logger - DEBUG - Tokenized <OPERATOR>: <->
+2024-05-21 02:54:38,797 - Logger - DEBUG - Tokenized <NUMBER>: <3>
+2024-05-21 02:54:38,798 - Logger - DEBUG - Tokenized <PARENTHESIS>: <)>
+2024-05-21 02:54:38,799 - Logger - DEBUG - Tokenized <SEMICOLON>: <;>
+2024-05-21 02:54:38,799 - Logger - DEBUG - Processing line: show(c);
+2024-05-21 02:54:38,800 - Logger - DEBUG - Tokenized <KEYWORD>: <show>
+2024-05-21 02:54:38,800 - Logger - DEBUG - Tokenized <PARENTHESIS>: <(>
+2024-05-21 02:54:38,801 - Logger - DEBUG - Tokenized <IDENTIFIER>: <c>
+2024-05-21 02:54:38,802 - Logger - DEBUG - Tokenized <PARENTHESIS>: <)>
+2024-05-21 02:54:38,802 - Logger - DEBUG - Tokenized <SEMICOLON>: <;>
+2024-05-21 02:54:38,807 - Logger - DEBUG - Tokenization completed
+2024-05-21 02:54:38,807 - Logger - DEBUG - Parser initialized with 33 tokens
+2024-05-21 02:54:38,808 - Logger - DEBUG - Processing token <dec> of type <TokenType.KEYWORD>
+2024-05-21 02:54:38,808 - Logger - DEBUG - ASTNode initialized with tokens and namespace.
+2024-05-21 02:54:38,808 - Logger - DEBUG - VariableDeclaration node created.
+2024-05-21 02:54:38,808 - Logger - DEBUG - Variable declared: a
+2024-05-21 02:54:38,808 - Logger - DEBUG - Processing token <a> of type <TokenType.IDENTIFIER>
+2024-05-21 02:54:38,809 - Logger - DEBUG - ASTNode initialized with tokens and namespace.
+2024-05-21 02:54:38,809 - Logger - DEBUG - Operation node created.
+2024-05-21 02:54:38,809 - Logger - DEBUG - Operation start index at 5.
+2024-05-21 02:54:38,809 - Logger - DEBUG - Operation end index at 6.
+2024-05-21 02:54:38,810 - Logger - DEBUG - Operation expression as a string -> 5.
+2024-05-21 02:54:38,810 - Logger - DEBUG - Evaluating expression: 5 = 5
+2024-05-21 02:54:38,810 - Logger - DEBUG - Evaluated expression -> 5
+2024-05-21 02:54:38,810 - Logger - INFO - 5 is added to namespace
+2024-05-21 02:54:38,811 - Logger - DEBUG - Processing token <dec> of type <TokenType.KEYWORD>
+2024-05-21 02:54:38,811 - Logger - DEBUG - ASTNode initialized with tokens and namespace.
+2024-05-21 02:54:38,839 - Logger - DEBUG - VariableDeclaration node created.
+2024-05-21 02:54:38,839 - Logger - DEBUG - Variable declared: c
+2024-05-21 02:54:38,840 - Logger - DEBUG - Processing token <c> of type <TokenType.IDENTIFIER>
+2024-05-21 02:54:38,840 - Logger - DEBUG - ASTNode initialized with tokens and namespace.
+2024-05-21 02:54:38,840 - Logger - DEBUG - Operation node created.
+2024-05-21 02:54:38,840 - Logger - DEBUG - Operation start index at 12.
+2024-05-21 02:54:38,841 - Logger - DEBUG - Operation end index at 27.
+2024-05-21 02:54:38,841 - Logger - DEBUG - Operation expression as a string -> 3*(a+23)-5*(a-3).
+2024-05-21 02:54:38,841 - Logger - DEBUG - Evaluating expression: 3*(a+23)-5*(a-3) = 74
+2024-05-21 02:54:38,842 - Logger - DEBUG - Evaluated expression -> 74
+2024-05-21 02:54:38,843 - Logger - INFO - 74 is added to namespace
+2024-05-21 02:54:38,843 - Logger - DEBUG - Processing token <show> of type <TokenType.KEYWORD>
+2024-05-21 02:54:38,843 - Logger - DEBUG - ASTNode initialized with tokens and namespace.
+2024-05-21 02:54:38,843 - Logger - DEBUG - ShowStatement node created.
+2024-05-21 02:54:38,844 - Logger - INFO - Valid Identifier shown on the screen as: c
+2024-05-21 02:54:38,844 - Logger - INFO - Parsing Completed.

@@ -1,0 +1,195 @@
+Features
+
+Every statement should end with a semicolon (;), otherwise an error will occur.
+
+Variable Declaration (dec): Allows users to declare variables in the custom language. The declared variables can be type of integer, float, and string.
+Note strings must be declared within double quotes " ", single quotes`' ' will result in SyntaxERROR
+
+dec a;
+
+The above line simply declares a variable, as it os not initialized yet, its value is None.
+
+Commenting is done by surrounding the specific statements with /!! and !!/.
+/!!dec a;!!/
+
+Printing Values (show()): Acts as the print() function in Python, displaying values on the output display.
+
+dec a;
+a = 5;
+show(a);
+
+The above line 5 wil be shown inside the display part. Warning Do not try to print expressions like show(1+1), that will result in error
+
+Control Flow Statements: Supports if, elif, else, and while statements for conditional and looping constructs. All statements should be stated inside the parenthesis (...) and the code blocks are defined inside the curly brackets {...}. The code also supports nested statements. dec a
+dec a;
+a = 10;
+if (a < 111) {
+a = 88;
+show(a);
+}
+elif (a > 20) {
+a = 99;
+show(a);
+}
+--------------------------------------------
+dec a;
+a=1;
+while(a<10){
+a = a + 1;
+show(a);
+while(b<5){
+b = b + 1;
+show("b is",b);
+}
+}
+show("new",a);
+--------------------------------------------
+dec a;
+a=1;
+while(a<10){
+a = a + 1;
+if(a>5){
+show(a);
+}
+}
+show(a);
+
+
+---------Example 1
+
+dec a;
+a = 5;
+dec c;
+c = 3*(a+23)-5*(a-3);
+show(c);
+
+--------Example 2
+
+dec a;
+a=10;
+if(a<111){
+   a=19;
+   show(a);
+}
+elif(a>10){
+   a=99;
+   show(a);
+}
+
+-----------Example 3
+
+dec a;
+a=10;
+if(a>111){
+   a=19;
+   show(a);
+}
+elif(a>10){
+   a=99;
+   show(a);
+}
+elif(a>11){
+   a="hi";
+   show(a);
+}
+else{
+  a="bye";
+  show(a);
+}
+
+--------Example 4
+
+dec a;
+a=10;
+if(a<111){
+   a=19;
+   show(a);
+   if(a>119){
+      a=333;
+      show(a);
+   }
+}
+
+----------Example 5
+
+dec a;
+a=10;
+if(a>111){
+   a=19000;
+   show(a);
+}
+elif(a<55){
+      a=444;
+      show(a);
+   }
+elif(a<45){
+  a=445;
+  show(a);
+}
+
+-----------Example 6
+
+dec a;
+a=1;
+while(a<10){
+    a = a + 1;
+}
+show(a);
+
+-----------Example 7
+
+dec a;
+a=1;
+while(a<10){
+    a = a + 1;
+    if(a>5){
+       show(a," ");
+    }
+}
+show(a);
+
+-----------Example 8
+
+dec a;
+a=1;
+while(a<10){
+    a = a + 1;
+    if(a>5){
+       show(a," ");
+    }
+}
+show("new",a);
+
+-------Example 9
+
+dec a;
+a=1;
+dec b;
+b=2;
+while(a<10){
+    a = a + 1;
+    show(a);
+    while(b<5){
+        b = b + 1;
+        show("b is",b);
+    }
+}
+show("new",a);
+
+-------Example 10
+dec a;
+a = 10;
+if (a < 111) {
+   a = 88;
+   show(a);
+}
+elif (a > 20) {
+   a = 99;
+   show(a);
+}
+
+---------Example 11
+
+dec a;
+a=15;
+show("a=",a);
